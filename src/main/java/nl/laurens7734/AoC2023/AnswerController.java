@@ -2,6 +2,7 @@ package nl.laurens7734.AoC2023;
 
 import nl.laurens7734.AoC2023.Day1.Day1;
 import nl.laurens7734.AoC2023.Day2.Day2;
+import nl.laurens7734.AoC2023.Day3.Day3;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,6 +30,7 @@ public class AnswerController {
         return switch (daynum) {
             case 1 -> new Day1();
             case 2 -> new Day2();
+            case 3 -> new Day3();
             default -> null;
         };
     }
