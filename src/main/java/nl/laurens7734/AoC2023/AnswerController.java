@@ -5,6 +5,7 @@ import nl.laurens7734.AoC2023.Day2.Day2;
 import nl.laurens7734.AoC2023.Day3.Day3;
 import nl.laurens7734.AoC2023.Day4.Day4;
 import nl.laurens7734.AoC2023.Day5.Day5;
+import nl.laurens7734.AoC2023.Day6.Day6;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -35,6 +36,7 @@ public class AnswerController {
             case 3 -> new Day3();
             case 4 -> new Day4();
             case 5 -> new Day5();
+            case 6 -> new Day6();
             default -> null;
         };
     }
