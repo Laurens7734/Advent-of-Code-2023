@@ -7,15 +7,15 @@ import nl.laurens7734.AoC2023.Day4.Day4;
 import nl.laurens7734.AoC2023.Day5.Day5;
 import nl.laurens7734.AoC2023.Day6.Day6;
 import nl.laurens7734.AoC2023.Day7.Day7;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @CrossOrigin(maxAge = 3600)
 public class AnswerController {
-    @GetMapping("answer")
+    @PostMapping("answer")
     public String getAwnser(@RequestBody AoCRequestBody request){
         Day d = getDay(request.getDay());
         if(d == null)
@@ -28,6 +28,17 @@ public class AnswerController {
             return d.answerTwo(request.getInput());
         }
         return "no valid puzzle";
+    }
+
+    @GetMapping("supporteddays")
+    public List<Integer> getSupportedDays(){
+        List<Integer> answer = new ArrayList<>();
+        int i = 1;
+        while(getDay(i) != null){
+            answer.add(i);
+            i++;
+        }
+        return answer;
     }
 
     private Day getDay(int daynum){
