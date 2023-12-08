@@ -7,6 +7,7 @@ import nl.laurens7734.AoC2023.Day4.Day4;
 import nl.laurens7734.AoC2023.Day5.Day5;
 import nl.laurens7734.AoC2023.Day6.Day6;
 import nl.laurens7734.AoC2023.Day7.Day7;
+import nl.laurens7734.AoC2023.Day8.Day8;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -50,7 +51,7 @@ public class AnswerController {
             case 5 -> new Day5();
             case 6 -> new Day6();
             case 7 -> new Day7();
-            //case 8 -> new Day8();
+            case 8 -> new Day8();
             //case 9 -> new Day9();
             //case 10 -> new Day10();
             //case 11 -> new Day11();
