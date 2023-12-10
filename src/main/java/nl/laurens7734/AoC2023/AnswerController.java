@@ -1,6 +1,7 @@
 package nl.laurens7734.AoC2023;
 
 import nl.laurens7734.AoC2023.Day1.Day1;
+import nl.laurens7734.AoC2023.Day10.Day10;
 import nl.laurens7734.AoC2023.Day2.Day2;
 import nl.laurens7734.AoC2023.Day3.Day3;
 import nl.laurens7734.AoC2023.Day4.Day4;
@@ -54,7 +55,7 @@ public class AnswerController {
             case 7 -> new Day7();
             case 8 -> new Day8();
             case 9 -> new Day9();
-            //case 10 -> new Day10();
+            case 10 -> new Day10();
             //case 11 -> new Day11();
             //case 12 -> new Day12();
             //case 13 -> new Day13();
