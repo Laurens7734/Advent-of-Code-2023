@@ -3,6 +3,9 @@ package nl.laurens7734.AoC2023;
 import nl.laurens7734.AoC2023.Day1.Day1;
 import nl.laurens7734.AoC2023.Day10.Day10;
 import nl.laurens7734.AoC2023.Day11.Day11;
+import nl.laurens7734.AoC2023.Day12.Day12;
+import nl.laurens7734.AoC2023.Day13.Day13;
+import nl.laurens7734.AoC2023.Day14.Day14;
 import nl.laurens7734.AoC2023.Day2.Day2;
 import nl.laurens7734.AoC2023.Day3.Day3;
 import nl.laurens7734.AoC2023.Day4.Day4;
@@ -20,7 +23,7 @@ import java.util.List;
 @CrossOrigin(maxAge = 3600)
 public class AnswerController {
     @PostMapping("answer")
-    public String getAwnser(@RequestBody AoCRequestBody request){
+    public String getAnswer(@RequestBody AoCRequestBody request){
         Day d = getDay(request.getDay());
         if(d == null)
             return "Day not supported";
@@ -58,9 +61,9 @@ public class AnswerController {
             case 9 -> new Day9();
             case 10 -> new Day10();
             case 11 -> new Day11();
-            //case 12 -> new Day12();
-            //case 13 -> new Day13();
-            //case 14 -> new Day14();
+            case 12 -> new Day12();
+            case 13 -> new Day13();
+            case 14 -> new Day14();
             //case 15 -> new Day15();
             //case 16 -> new Day16();
             //case 17 -> new Day17();
