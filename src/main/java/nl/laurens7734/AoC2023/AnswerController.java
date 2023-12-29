@@ -6,6 +6,7 @@ import nl.laurens7734.AoC2023.Day11.Day11;
 import nl.laurens7734.AoC2023.Day12.Day12;
 import nl.laurens7734.AoC2023.Day13.Day13;
 import nl.laurens7734.AoC2023.Day14.Day14;
+import nl.laurens7734.AoC2023.Day15.Day15;
 import nl.laurens7734.AoC2023.Day2.Day2;
 import nl.laurens7734.AoC2023.Day3.Day3;
 import nl.laurens7734.AoC2023.Day4.Day4;
@@ -64,7 +65,7 @@ public class AnswerController {
             case 12 -> new Day12();
             case 13 -> new Day13();
             case 14 -> new Day14();
-            //case 15 -> new Day15();
+            case 15 -> new Day15();
             //case 16 -> new Day16();
             //case 17 -> new Day17();
             //case 18 -> new Day18();
